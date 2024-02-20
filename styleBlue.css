@@ -16,8 +16,8 @@ header{
   transition: 2s;
 }
 .sidebar{
-  width: 25%;
-  height: fit-content;
+  width: 20%;
+  height: 100%;
   background-color: rgba(79, 139, 192, 0.559);
   margin-left: 5%;
   margin-top: 3%;
@@ -28,26 +28,25 @@ header{
 .link{
   all: initial;
   display: flex;
-  justify-content: left;
-  align-items: left;
+  justify-content: space-between;
+  align-items: center;
 }
 .sidebar__link{
   list-style-type: none;
   padding: 10px;
   position: relative;
-  transition: 1s;
 }
 .sidebar__link--item{
   padding: 10px;
   list-style-type: none;
 }
 .link:hover{
-  background-color: rgb(60, 41, 183);
+  background-color: rgba(22, 56, 81, 0.371);
   border-radius: 5px;
   cursor: pointer;
 }
 .link:active{
-  background-color: rgb(43, 26, 172);
+  background-color: rgba(54, 39, 174, 0.508);
 }
 .sidebar__mini-profile{
   display: flex;
@@ -73,6 +72,7 @@ header{
 
 .button_theme.White:hover{
   background-color: rgb(179, 179, 179);
+  transition: 1s;
 }
 .button_theme.Black:hover{
   background-color: rgb(0, 0, 0);
@@ -82,11 +82,11 @@ header{
   background-color: rgb(26, 26, 163);
   color: aliceblue;
 }
-.sidebar__uv{
-  display: inline-flex;
-}
-.sidebar__uved{
-  width: 20px;
-  height: 20px;
-  background-color: black;
+.sidebar__notification{
+  list-style-type: none;
+  background-color: rgba(22, 56, 81, 0.452);
+  -ms-flex-align: end;
+  border-radius: 5px;
+  text-align: center;
+  min-width: 20px;
 }
